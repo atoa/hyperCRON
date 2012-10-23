@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "minimum_chrome_version": "22",
+  "version": "0.0.1",
+  "name": "HyperCRON Timer",
+  "description": "Measure the time it takes to download a file",
+  "icons": {
+//    "32": "icons/icon_32.png",
+//    "48": "icons/icon_48.png",
+    "64": "/icons/icon_64.png",
+    "128": "/icons/icon_128.png"
+  },
+//  "background_page": "pages/background.html",
+  "background": {
+    "script": [
+      "scripts/background.js",
+               "/scripts/vendor/jquery-1.8.2.js",
+               "/scripts/vendor/bootstrap.js"
+    ],
+    "page": "/pages/background.html"
+  },
+//  "content_scripts": [
+//    "matches": "/pages/popup.html",
+//    "js": [//"content_script.js",
+//           "/scripts/vendor/jquery-1.8.2.js",
+//           "/scripts/vendor/bootstrap.js"]
+//  ],
+  "browser_action": {
+    "default_icon": "icons/icon_64.png",
+    "default_title": "HyperCRON Timer"
+//    "default_popup": "pages/popup.html"
+  },
+//  TODO: review minimum perms
+  "permissions": ["webRequest",
+                  "webRequestBlocking",
+                  "storage",
+                  "tabs",
+                  "<all_urls>"]
+//  "content_security_policy": "script-src 'self' 'unsafe-eval'; obj-src 'self' 'unsafe-eval'"
+//  "content_security_policy": "script-src chrome-extension:// chrome-extension-resource:// 'self'; object-src chrome-extension:// chrome-extension-resource:// 'self'; frame-src chrome-extension:// chrome-extension-resource:// 'self' style-src chrome-extension:// chrome-extension-resource:// 'self'"
+}

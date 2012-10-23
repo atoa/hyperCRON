@@ -1,0 +1,50 @@
+html, body {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  min-width: 540px;
+/*
+  max-width: 600px;
+  height: 100%;
+*/
+}
+
+
+#main {
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+#timer {
+  font-family: 'Russo One', sans-serif;
+  font-size: 8em;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+dt, dd {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+dd {
+  padding-left: 6px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  margin-top: -60px;
+  height: 60px;
+  clear: both;
+  padding-top: 20px;
+}
+
+.chrono {
+  border: 1px solid gray;
+  border-radius: 8px;
+  border-color: #E3E3E3;
+  margin: 20px;
+}
